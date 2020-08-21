@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first-->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!--Build:css css/main css-->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/game.css" />
+
+        <title>Turn Of Phrase</title>
+    </head>
+    <body >
+        <div class="top-bar">
+            <div class="container">
+                <div class="col-12 text-right">
+                    <p>Turn of Phrase</p>
+                </div>
+            </div>
+        </div>
+
+<nav class="navbar  bg-dark navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+     <a class="navbar-brand" href="#"><img id="logo" src="img/tlogo.jpg" alt="logo"></a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+     </button>
+     <div class="collapse navbar-collapse" id="navbarResponsive">
+
+       <ul class="navbar-nav ml-auto">
+        <li class="nav-item active"><a class="nav-link" href="#home"><i class="fa fa-home fa-lg"></i> Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> About</a></li>
+        <li class="nav-item active"><a class="nav-link" href="#team"> Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="feedback.html"> Feedback</a></li>
+        </ul>
+     </div>
+    </div>
+ </nav>
+</div> 
+
+        <div class="jumbotron">
+            <img src="img/desktop.jpg" width="100%"heigth="80%">
+         </div>
+     
+
+ 
+
+ <section id="about">
+ <div class="about container">
+     <div class="about-top">
+       <div class="col-12 text-center mt-8">
+             <div class="text-dark pt-6">
+                 <h1> Turn of Phrase</h1>
+             </div>
+             <div class="border-top border-dark w-25 mx-auto my-10"></div>
+             <p class="lead"> Turn of Phrase is a game, where the user is presented with an illustration and has to guess what phrase or figure of speech, the illustration represents. The user will be
+                able to use hints or skips.As they go on, they will earn a higher score. Using the “hint” and “skip” and “quit” options will both cost the user a portion of their score. When they click, a modal will appear, asking
+                the user if they are sure they want to spend their score. If they don’t have a high enough score, the modal will tell them they do not have the option. There will also be a settings icon, where the user can enable things like
+                sound and music. In addition, the difficulty level and timer will be displayed. If the user decides to quit, a modal will appear to ask if they are sure and let them know that all of their progress will be lost. If the user agrees, they will be redirected to the home screen.</p>
+        </div>
+    </div>
+ 
+     
+    <div class="about-bottom">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-4">
+                    <div class="about">
+                <i class="fa fa-book" aria-hidden="true" data-transform="shrink-4 up-5"></i>
+                <h2>Rules</h2>
+                <p>Find the common expression on the screen in a timely manner and get the coins. You can use a hint that will cost you some coins or skip to the next phrase.</p>
+             </div>
+         </div>
+         <div class="col-lg-4">
+            <div class="about">
+               <i class="fa fa-gamepad" aria-hidden="true" data-transform="shrink-4 up-5"></i>
+               <h2>Features</h2>
+               <p>Player can create account or play as guest. The sound can be switch on and off.The player has different levels so the game does not become boring.</p>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="about">
+               <i class="fa fa-cogs" aria-hidden="true" data-transform="shrink-4 up-5"></i>
+               <h2>Settings</h2>
+               <p>There are thre sub-levels that,the player can choose from the main menu: Easy, Medium and Hard. When a new player start a game, an account can be created so the scores, the best time and other informations from the game can be stored. </p>
+            </div>
+        </div>
+     </div>
+        </div>
+
+        <!--Accordian-->
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                  <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Try it out
+                  </button>
+                </h2>
+              </div>
+          
+              <div id="collapseOne" class="collapse" data-toggle="collapse" aria-labelledby="headingOne" aria-expanded="false" data-parent="#accordionExample">
+                <div class="card-body">
+                  <button>Easy</button>
+                  <button>Medium</button>
+                  <button>Hard</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!--End Accordian-->
+ </div>
+ </div>
+ </section>
+ <hr>
+
+
+ <div class="fixed-background">
+     <div class="row text-dark py-8">
+         <div class="col-12 text-center">
+             <h3> Did you figure out the expression on top?</h3>
+             <h4 class="py-4"> ...so what does it says?</h4>
+             <a href="#hintButton" role="button"class="btn btn-primary btn-lg ml-2" id="hint" data-toggle="tooltip"data-placement="bottom" data-html="true" title="Or Nourishment for the mind">Hint</a>
+             <a href="#"class="btn btn-danger btn-lg mr-2">Skip</a>
+         </div>
+     </div>
+     
+     <div class="fixed-wrap">
+         <div class="fixed"> </div>
+     </div>
+     
+ </div>
+ 
+                        
+                        
+ <hr>
+ 
+
+ <div class="container-fluid padding">
+     
+     <div class="col-12 text-center">
+         <h6 class="display-4"> Meet the team</h6>
+         <div class="border-top border-dark w-25 mx-auto my-10"></div>
+     </div>
+         
+         
+     </div>
+     <div class=" container-fluid padding">
+     <div class="row padding ">
+         <div class="col-md-6 team">
+             <div class="row text-aligns-center">
+                 <div class="col-md-3">
+                     <img src="img/IMG_6838.JPG" width="200" height="200">
+                 </div>
+                 <div class="col-md-3">
+                     <blockquote>
+                         <i class="fa fa-quote-left"></i>
+                         I have a background in analytical chemistry and I always like solving anagrams. Turn of phrase is an interesting game that keeps the player engaged and stimulated. It is not overly complex and it is fun for the young and the young-at-heart
+                     <hr class="team-hr">
+                    <cite>&#8212; Cynthia, Houston</cite>
+                </blockquote>
+                 </div>
+             </div>
+         </div>
+            <div class="col-md-6 team">
+            <div class="row text-aligns-center">
+
+                 <div class=" col-md-3">
+                    <img src="img/IMG_6835.JPG" alt="William"width="200" height="200">
+                </div>
+                 <div class="col-md-3">
+                    <blockquote>
+                        <i class="fa fa-quote-left"></i>
+                        Graphic design, creator of game. Bootstrap student. lorem ipsumnannnnnf mannbbk anc mnnfsoind anoisnco nconcvoa.
+                    <hr class="team-hr">
+                   <cite>&#8212; William, </cite>
+               </blockquote>
+                </div>
+             </div>
+         </div>
+     </div>
+     
+     <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                <h5> Links</h5>
+                <ul class="list-unstyled">
+                    <li> <a href="#"> Home </a></li>
+                    <li> <a href="#"> About </a></li>
+                    <li> <a href="#"> Team</a></li>
+                    <li> <a href="feedback.html"> Feedback </a></li>
+                </ul>
+                </div>
+
+                
+                <div class="col-sm-4 text-center">
+                    <h5>Contact Us </h5>
+                    <a role="button" class="btn btn-link" href="mailto:michelecynthia@gmail.com"><i class="fa fa-envelope-o"></i> michelecynthia@gmail.com</a>
+                </div>       
+            </div>
+         </div>
+    </footer>
+     
+ </div>
+         <!--jQuery must come first, then popper.js, then the Bootstrap Javascript plugins.-->
+        <!--build:js js/main js-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"> </script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"> </script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"> </script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+  
+        </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Nunito', sans-serif;
+
+}
+/*-- top-bar--*/
+
+.top-bar {
+    background: #334f70;
+    height: 3rem;
+    padding: 0.5rem;
+    color: white;
+    text-decoration:none;
+    font-size: 1.2rem;
+}
+/*--end top bar--*/
+
+/*--Navigation bar --*/
+.navbar-brand {
+    height: 6rem;
+}
+#logo {
+    width: 90px;
+    height: 90px;
+}
+.bg-dark{
+    background-color: #a6d9f7 !important;
+}
+.navbar {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    padding-right:0.5rem;
+}
+ .nav-link{
+    padding-top: 0.8rem;
+color:#334f70 !important;
+}
+ .nav-link.active,
+ .nav-link:hover {
+    color: white!important;
+}
+/*-- End navigation bar --*/
+
+/*--fixed background --*/
+
+
+
+/*--fixed background --*/
+
+.jumbotron {
+    background-color: hsl(210, 92%, 28%, 0.6);
+    
+}
+.fixed-wrap {
+    background-image: url('../img/lightbulb.jpg');
+    position:fixed;
+}
+.fixed-background {
+    padding: 10rem 0;
+    
+}
+.site-footer {
+    background-image: linear-gradient(#a0e4da, white);
+    padding: 20px 0; }
