@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Turn of Phrase</title>
+</head>
+
+<body class="pt-5">
+    <div class="container">
+        <!-- div for the row top. Settings, Score, Timer.-->
+        <div class="row row-top">
+            <div class="col-3 time-clock">
+                <div class="clock-icon"></div>59
+            </div>
+            <div class="col-7 score">
+                <div class="coin-icon"></div>1700
+            </div>
+            <div class="col-2 options-top">
+               <i class="fab fa-500px"></i>
+            </div>
+        </div>
+
+        <!-- div for the row middle. Main content.-->
+        <div class="row row-middle">
+            <div class="col-12 main-content">
+
+            </div>
+        </div>
+
+        <!-- div for the row bottom. Hint80, Skip50.Quit-->
+        <div class="row row-bottom">
+            <div class="col-12 col-lg-9 answer">
+
+            </div>
+            <div class="row col-12 col-lg-3 options-bottom">
+                <div class="col-4 col-lg-12">
+                    <button>?</button>600
+                </div>
+                <div class="col-4 col-lg-12">
+                    <button>==></button>1000
+                </div>
+                <div class="col-4 col-lg-12">
+                    <button>QUIT</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
