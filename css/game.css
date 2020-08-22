@@ -6,25 +6,22 @@ body {
 /*-- top-bar--*/
 
 .top-bar {
-    background: #334f70;
-    height: 3rem;
-    padding: 0.5rem;
-    color: white;
+    background: #232323;
+    height: 2.5rem;
+    color:#ffe00d;
     text-decoration:none;
     font-size: 1.2rem;
 }
 /*--end top bar--*/
 
 /*--Navigation bar --*/
-.navbar-brand {
-    height: 6rem;
-}
 #logo {
-    width: 90px;
-    height: 90px;
+    width:500px;
 }
 .bg-dark{
-    background-color: #a6d9f7 !important;
+    /*background-color: #a6d9f7 !important; */
+   /* background-image: linear-gradient(90deg, #ffffff 0%, #fff294 15%, #ffe00d 85%);*/
+   background:#232323;
 }
 .navbar {
     font-size: 1.2rem;
@@ -34,22 +31,35 @@ body {
 }
  .nav-link{
     padding-top: 0.8rem;
-color:#334f70 !important;
+/*color:#334f70 !important;*/
+color:#f45100 !important;
 }
  .nav-link.active,
  .nav-link:hover {
-    color: white!important;
+    color: #8b0000!important;
 }
 /*-- End navigation bar --*/
 
 /*--fixed background --*/
 
 
-
 /*--fixed background --*/
-
+.custom-toggler.navbar-toggler { 
+    border-color: #f45100 !important;
+    ; 
+}
+.custom-toggler .navbar-toggler-icon { 
+    background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(240, 80, 0, 0.8)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+h1, h2 , h6{
+    color:#f45100;
+    font-weight:bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
 .jumbotron {
-    background-color: hsl(210, 92%, 28%, 0.6);
+    /*background-color: hsl(210, 92%, 28%, 0.6);*/
+     background-image: linear-gradient(90deg, #ffffff 0%, #fff294 15%, #ffe00d 85%);
     
 }
 .fixed-wrap {
@@ -61,5 +71,38 @@ color:#334f70 !important;
     
 }
 .site-footer {
-    background-image: linear-gradient(#a0e4da, white);
+    background-image: linear-gradient(90deg, #ffffff 0%, #fff294 15%, #ffe00d 85%);
+    
     padding: 20px 0; }
+    
+#homeCarousel{
+    height:400px;
+}
+.carousel-item img
+{
+    width:8px;
+}
+#example-image{
+    max-width:400px;
+}
+
+.current-text{
+    border:2px solid green;
+}
+
+input{
+  text-transform: uppercase;
+  font-weight:bold;
+  text-align:center;
+  border:1px solid gray;
+
+}
+
+.text-block{
+    width:40px;
+    height:40px;
+    outline: none;
+}
+.answer-modal{
+    border-radius:4px;
+}

@@ -17,7 +17,7 @@
     </head>
     <body >
         <div class="top-bar">
-            <div class="container">
+            <div class="container text-center">
                 <div class="col-12 text-right">
                     <p>Turn of Phrase</p>
                 </div>
@@ -26,25 +26,46 @@
 
 <nav class="navbar  bg-dark navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
-     <a class="navbar-brand" href="#"><img id="logo" src="img/tlogo.jpg" alt="logo"></a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-     </button>
-     <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="row">
+            <div class="col-9 col-lg-5 d-flex align-middle navbar-brand"><a href="#"><img class="img-fluid" id="logo" src="img/wordmark.png" alt="logo"></a></div>
+            <button class="navbar-toggler col-2 custom-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive"aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand"><span class="navbar-toggler-icon"></span></a>
+            </button>
+            <div class="col-6 collapse navbar-collapse" id="navbarResponsive">
 
-       <ul class="navbar-nav ml-auto">
-        <li class="nav-item active"><a class="nav-link" href="#home"><i class="fa fa-home fa-lg"></i> Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> About</a></li>
-        <li class="nav-item active"><a class="nav-link" href="#team"> Team</a></li>
-        <li class="nav-item"><a class="nav-link" href="feedback.html"> Feedback</a></li>
-        </ul>
-     </div>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#home"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> About</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#team"> Team</a></li>
+                <li class="nav-item"><a class="nav-link" href="feedback.html"> Feedback</a></li>
+                </ul>
+            </div>
+        </div>    
     </div>
  </nav>
 </div> 
 
         <div class="jumbotron">
-            <img src="img/desktop.jpg" width="100%"heigth="80%">
+            <div class="col-md-8 mx-auto">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li id="slide0" data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                        <li id="slide1" data-target="#homeCarousel" data-slide-to="1"></li>
+                        <li id="slide2" data-target="#homeCarousel" data-slide-to="2"></li>
+                    </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/curiosity.png" alt="Curiosity" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/food4thought.png" alt="React Lake Campground" />
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/shotinthedark.png" alt="Shot" />                            </div>
+                    </div>
+                    
+                </div>
+            </div>
          </div>
      
 
@@ -93,7 +114,7 @@
      </div>
         </div>
 
-        <!--Accordian-->
+        <!--Accordian
         <div class="accordion" id="accordionExample">
             <div class="card">
               <div class="card-header" id="headingOne">
@@ -104,7 +125,7 @@
                 </h2>
               </div>
           
-              <div id="collapseOne" class="collapse" data-toggle="collapse" aria-labelledby="headingOne" aria-expanded="false" data-parent="#accordionExample">
+             <div id="collapseOne" class="collapse" data-toggle="collapse" aria-labelledby="headingOne" aria-expanded="false" data-parent="#accordionExample">
                 <div class="card-body">
                   <button>Easy</button>
                   <button>Medium</button>
@@ -112,7 +133,7 @@
                 </div>
               </div>
             </div>
-        </div>
+        </div>-->
         <!--End Accordian-->
  </div>
  </div>
@@ -123,12 +144,73 @@
  <div class="fixed-background">
      <div class="row text-dark py-8">
          <div class="col-12 text-center">
-             <h3> Did you figure out the expression on top?</h3>
-             <h4 class="py-4"> ...so what does it says?</h4>
+             <img src="img/food4thought.png"alt="food4thought" id="example-image"class="img-fluid">
+         </div>
+         <div class="col-12 text-center">
+             <h3> Can you figure this out?</h3>
+             <h4 class="py-4"> ...so what does it say?</h4>
              <a href="#hintButton" role="button"class="btn btn-primary btn-lg ml-2" id="hint" data-toggle="tooltip"data-placement="bottom" data-html="true" title="Or Nourishment for the mind">Hint</a>
-             <a href="#"class="btn btn-danger btn-lg mr-2">Skip</a>
+             <button class="btn btn-primary btn-lg ml-2" id="done-button" >Done</button>
+             <button class="btn btn-primary btn-lg ml-2" id="clear-button" >Clear</button>
+             <!--<a href="#"class="btn btn-danger btn-lg mr-2">Skip</a>-->
+             <div class="col-12 my-3 py-3">
+                <div class="user-guess text-center">
+                    <div  id="tinker"  class="col-12 ">
+                        <input id="text-1" type='text' class="current-text text-block" name='block' maxlength="1" required/>
+                        <input id="text-2" type='text' class="text-block" name='block' maxlength="1" required/>
+                        <input id="text-3" type='text' class="text-block" name='block' maxlength="1" required/>
+                        <input id="text-4" type='text' class="text-block" name='block' maxlength="1" required/>
+                    </div>
+                    <div class="col-12 my-2">
+                        <input id="text-5" type='text' class="text-block"  name='block' maxlength="1" required/>
+                        <input id="text-6" type='text' class="text-block" name='block' maxlength="1" required/>
+                        <input id="text-7" type='text' class="text-block" name='block' maxlength="1" required/>
+                    </div>
+                    <div class="col-12">
+                        <input id="text-8" type='text' class="text-block" name='block' maxlength="1" required/>
+                        <input id="text-9" type='text' class="text-block" name='block' maxlength="1" required/>
+                        <input id="text-10" type='text' class="text-block" name='block' maxlength="1" required/>
+                        <input id="text-11" type='text' class="text-block" name='block' maxlength="1" required/>
+                        <input id="text-12" type='text' class="text-block" name='block' maxlength="1" required/>
+                        <input id="text-13" type='text' class="text-block" name='block' maxlength="1" required/>
+                        <input id="text-14" type='text' class="text-block" name='block' maxlength="1" required/>
+                    </div>
+                </div>
+             </div>
          </div>
      </div>
+
+     <div id="correct" class="modal fade answer-modal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2>Congratulations!! You are Correct!</h2>
+                        <button data-dismiss="modal" class="btn btn-primary">Okay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="incorrect" class="modal fade answer-modal" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <h2>Oops!! Try again!</h2>
+                        <button data-dismiss="modal" class="btn btn-primary">Okay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
      
      <div class="fixed-wrap">
          <div class="fixed"> </div>
@@ -151,34 +233,34 @@
          
      </div>
      <div class=" container-fluid padding">
-     <div class="row padding ">
-         <div class="col-md-6 team">
-             <div class="row text-aligns-center">
-                 <div class="col-md-3">
+     <div class="row padding mb-4 mt-2">
+         <div class="col-12 col-md-6 team">
+             <div class="row text-aligns-center content-center">
+                 <div class="col-12 col-lg-4">
                      <img src="img/IMG_6838.JPG" width="200" height="200">
                  </div>
-                 <div class="col-md-3">
+                 <div class="col-12 col-lg-8">
                      <blockquote>
                          <i class="fa fa-quote-left"></i>
-                         I have a background in analytical chemistry and I always like solving anagrams. Turn of phrase is an interesting game that keeps the player engaged and stimulated. It is not overly complex and it is fun for the young and the young-at-heart
-                     <hr class="team-hr">
-                    <cite>&#8212; Cynthia, Houston</cite>
+                         I have a background in analytical chemistry and I always like solving anagrams. Turn of phrase is an interesting game that keeps the player engaged and stimulated. It is not overly complex and it is fun for the young and the young-at-heart<br>
+                    <cite>&#8212; Cynthia Houston</cite>
+                    <hr class="team-hr">
                 </blockquote>
                  </div>
              </div>
          </div>
-            <div class="col-md-6 team">
-            <div class="row text-aligns-center">
+            <div class="col-xs-12 col-lg-6 team">
+            <div class="row text-aligns-center content-center">
 
-                 <div class=" col-md-3">
-                    <img src="img/IMG_6835.JPG" alt="William"width="200" height="200">
+                 <div class="col-12 col-lg-4">
+                    <img class="will" src="img/will.JPG" alt="William" width="200">
                 </div>
-                 <div class="col-md-3">
+                 <div class="col-12 col-lg-8 content-center">
                     <blockquote>
                         <i class="fa fa-quote-left"></i>
-                        Graphic design, creator of game. Bootstrap student. lorem ipsumnannnnnf mannbbk anc mnnfsoind anoisnco nconcvoa.
+                        Graphic design, creator of game. Bootstrap student. An interest in Graphic Design and animation.<br>
+                        <cite>&#8212; Will Peterson</cite>
                     <hr class="team-hr">
-                   <cite>&#8212; William, </cite>
                </blockquote>
                 </div>
              </div>
@@ -202,6 +284,7 @@
                 <div class="col-sm-4 text-center">
                     <h5>Contact Us </h5>
                     <a role="button" class="btn btn-link" href="mailto:michelecynthia@gmail.com"><i class="fa fa-envelope-o"></i> michelecynthia@gmail.com</a>
+                    <a role="button" class="btn btn-link" href="mailto:wllptrsn1992@gmail.com"><i class="fa fa-envelope-o"></i> wllptrsn1992@gmail.com</a>
                 </div>       
             </div>
          </div>
@@ -213,6 +296,7 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"> </script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"> </script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"> </script>
+        <script src="js/game.js"></script>
         <script>
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip()

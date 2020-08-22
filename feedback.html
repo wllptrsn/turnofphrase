@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Build:css css/main css -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/game.css" />
+
+        <title>Turn Of Phrase</title>
+    </head>
+    <body >
+        <div class="top-bar">
+            <div class="container">
+                <div class="col-12 text-right">
+                    <p>Turn of Phrase</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar  bg-dark navbar-expand-lg navbar-dark sticky-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-9 col-lg-5 d-flex align-middle navbar-brand"><a href="game.html"><img class="img-fluid" id="logo" src="img/wordmark.png" alt="logo"></a></div>
+                    <button class="navbar-toggler col-2 custom-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive"aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <a class="navbar-brand"><span class="navbar-toggler-icon"></span></a>
+                    </button>
+                    <div class="col-6 collapse navbar-collapse" id="navbarResponsive">
+        
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="game.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="game.html#about"><i class="fa fa-info fa-lg"></i> About</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="game.html/#team"> Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"> Feedback</a></li>
+                        </ul>
+                    </div>
+                </div>    
+            </div>
+         </nav>
+</div> 
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="game.html">Home</a></li>
+                <li class="breadcrumb-item active">Feedback</li>
+            </ol>
+        </div>
+    </div>
+    <div class="row row-content">
+        <div class="col-12">
+            <h2>Send us your Feedback</h2>
+            <hr />
+        </div>
+    
+        <div class="col-md-10">
+            <form>
+                <div class="form-group row">
+                    <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                    <div class="col-5 col-md-3">
+                        <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                    </div>
+                    <div class="col-7">
+                        <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-md-2 col-form-label">Email</label>
+                    <div class="col-md-10">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                    </div>
+                </div>
+            
+                <div class="form-group row">
+                    <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                    <div class="col-md-10">
+                        <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-md-2 col-md-10">
+                        <button type="submit" class="btn btn-primary">Send Feedback</button>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+   </div>
+
+</div>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"> </script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"> </script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"> </script>
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            });
+  
+        </script>
+    </body>
+</html>
